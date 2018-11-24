@@ -111,3 +111,18 @@ Memory    | 4GB
 >
 >     # will work for ubuntu 14.04
 > 	  sudo update-rc.d kibana defaults 96 9
+<hr>
+**App Server**
+-------------
+###  **Server Configuration**
+Virtual Box Settings     | Value | Remarks 
+------------------------ | ----- | -------
+OS | Ubuntu 14.04 - 64 bit  
+Network (Adapter 1) | Attached to Internal Network (intnet) | For networking between VMs inside Virtual Box 
+Network (Adapter 2) | Attached to NAT | For internet access within the VM
+Disk     | 25 GB VDI
+Memory    | 4GB
+> **Note:** Use the following command in the host machine to enable intnet (Default DHCP of Virtual Box). [Reference!](https://superuser.com/a/339567/328460)
+>
+>     VBoxManage dhcpserver add --netname intnet --ip 10.10.10.1 --netmask 255.255.255.0 --lowerip 10.10.10.2 --upperip 10.10.10.12 --enable
+<hr>
