@@ -1,8 +1,12 @@
-
-
-
 **My Logging Pipeline**
 ===================
+<!--ts-->
+   * [ELK Server](#elk-server)
+	   * [Server Configuration](#server-configuration)
+	   * [Software Installations](#software-installations)
+   * [App Server](#app-server)
+	   * [Server Configuration](#server-configuration)
+<!--te-->
 
 
 **ELK Server**
@@ -129,10 +133,3 @@ Memory    | 4GB
 >
 >     VBoxManage dhcpserver add --netname intnet --ip 10.10.10.1 --netmask 255.255.255.0 --lowerip 10.10.10.2 --upperip 10.10.10.12 --enable
 <hr>
-
-
-**Table of Contents**
-<!--ts-->
-   * [ELK Server](#elk-server)
-   * [App Server](#app-server)
-<!--te-->
