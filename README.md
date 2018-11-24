@@ -41,7 +41,7 @@ Memory    | 4GB
 >	  sudo apt-get -y install elasticsearch
 > ***basic configurations..***
 >
-> 	  # open the config file
+> 	  # open config file
 >     sudo vi /etc/elasticsearch/elasticsearch.yml
 >
 >	  # uncomment and modify the values for network.host, host.port
@@ -87,3 +87,27 @@ Memory    | 4GB
 >     echo 'deb http://packages.elastic.co/logstash/2.2/debian stable main' | sudo tee /etc/apt/sources.list.d/logstash-2.2.x.list
 >     sudo apt-get update
 >     sudo apt-get install logstash
+**Kibana**
+> ***installation..***
+>
+>     echo "deb http://packages.elastic.co/kibana/4.5/debian stable main" | sudo tee -a /etc/apt/sources.list.d/kibana-4.5.x.list
+>     sudo apt-get update
+>     sudo apt-get -y install kibana
+> ***basic configurations..***
+>
+> 	  # open config file
+>     sudo vi /opt/kibana/config/kibana.yml
+>
+>	  # uncomment and modify the values for server.host
+>	  # write out and exit
+> 	  server.host: "localhost"
+>
+>	  # `localhost` can be modified with the ip address of your elk server
+>
+> ***start elasticsearch as a service..***
+>
+>     sudo service kibana start
+>***to start kibana service on boot (optional)..***
+>
+>     # will work for ubuntu 14.04
+> 	  sudo update-rc.d kibana defaults 96 9
