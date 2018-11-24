@@ -81,3 +81,9 @@ Memory    | 4GB
 >
 >     # will work for ubuntu 14.04
 > 	  sudo update-rc.d elasticsearch defaults 95 10
+**Logstash**
+> ***installation..***
+>
+>     echo 'deb http://packages.elastic.co/logstash/2.2/debian stable main' | sudo tee /etc/apt/sources.list.d/logstash-2.2.x.list
+>     sudo apt-get update
+>     sudo apt-get install logstash
