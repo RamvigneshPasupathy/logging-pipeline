@@ -1,5 +1,6 @@
 
 
+
 **My Logging Pipeline**
 ===================
 
@@ -131,7 +132,7 @@ Memory    | 4GB
 
 
 **Table of Contents**
-
-[TOC]
-
-
+<!--ts-->
+   * [ELK Server](#elk-server)
+   * [App Server](#app-server)
+<!--te-->
