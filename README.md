@@ -13,7 +13,7 @@ Network (Adapter 1) | Attached to Internal Network (intnet) | For networking bet
 Network (Adapter 2) | Attached to NAT | For internet access within the VM
 Disk     | 25 GB VDI
 Memory    | 4GB
-> **Note:** Use the following command in the host to enable intnet (Default DHCP of Virtual Box). [Reference!](https://superuser.com/a/339567/328460)
+> **Note:** Use the following command in the host machine to enable intnet (Default DHCP of Virtual Box). [Reference!](https://superuser.com/a/339567/328460)
 >
 >     VBoxManage dhcpserver add --netname intnet --ip 10.10.10.1 --netmask 255.255.255.0 --lowerip 10.10.10.2 --upperip 10.10.10.12 --enable
 <hr>
@@ -22,9 +22,9 @@ Memory    | 4GB
 **Oracle Java 8**
 > ***installation..***
 >
->		sudo add-apt-repository -y ppa:webupd8team/java
->	    sudo apt-get update
->	    sudo apt-get -y install oracle-java8-installer
+>	  sudo add-apt-repository -y ppa:webupd8team/java
+>	  sudo apt-get update
+>	  sudo apt-get -y install oracle-java8-installer
 > ***env variable will be automatically set..***
 >
 >     echo $JAVA_HOME
@@ -58,7 +58,7 @@ Memory    | 4GB
 >	  ufw allow 9200
 > ***start elasticsearch as a service..***
 >
->		sudo service elasticsearch start
+>	  sudo service elasticsearch start
 > ***check if elasticsearch is working properly..***
 >
 >	- open `localhost:9200` in any browser
