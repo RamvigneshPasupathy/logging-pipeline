@@ -112,6 +112,7 @@ Memory    | 4GB
 >     # will work for ubuntu 14.04
 > 	  sudo update-rc.d kibana defaults 96 9
 <hr>
+
 **App Server**
 -------------
 ###  **Server Configuration**
