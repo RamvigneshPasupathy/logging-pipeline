@@ -1,3 +1,4 @@
+
 **My Logging Pipeline**
 ===================
 <!--ts-->
@@ -5,13 +6,15 @@
 	   * [Server Configuration](#server-configuration)
 	   * [Software Installations](#software-installations)
    * [App Server](#app-server)
-	   * [Server Configuration](#server-configuration)
+	   * [Server Configuration](#server-configuration-1)
+	   * [Software Installations](#software-installations-1)
 <!--te-->
-
 
 **ELK Server**
 -------------
+
 ###  **Server Configuration**
+
 Virtual Box Settings     | Value | Remarks 
 ------------------------ | ----- | -------
 OS | Ubuntu 14.04 - 64 bit  
@@ -133,3 +136,12 @@ Memory    | 4GB
 >
 >     VBoxManage dhcpserver add --netname intnet --ip 10.10.10.1 --netmask 255.255.255.0 --lowerip 10.10.10.2 --upperip 10.10.10.12 --enable
 <hr>
+
+### **Software Installations**
+**Filebeat**
+> ***installation..***
+>
+>     echo "deb https://packages.elastic.co/beats/apt stable main" |  sudo tee -a /etc/apt/sources.list.d/beats.list
+>     wget -qO - https://packages.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+>     sudo apt-get update
+>     sudo apt-get install filebeat
